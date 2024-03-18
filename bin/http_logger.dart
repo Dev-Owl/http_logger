@@ -12,7 +12,7 @@ Ensure your firewall is not blocking the application
 
 void main(List<String> arguments) async {
   var port = 8088;
-  var ip = "172.16.200.22";
+  var ip = "127.0.0.1";
   if (arguments.any((e) => e.startsWith('port='))) {
     final rawArgument =
         arguments.where((element) => element.startsWith('port=')).first;
